@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block main %}
+<div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+    <h4>Gracias por su compra</h4>
+    <br>
+    <li style="list-style: none; margin-left: 10px;">
+        <a href="{% url 'Catalogo' %}">Volver a comprar</a>
+    </li>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+{% endblock %}

@@ -1,0 +1,126 @@
+.fondo{
+    background-image: url(Fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+@media (max-width: 768px) {
+    .fondo {
+        height: 400px;
+        background-position: top center; 
+    }
+}
+
+@media (max-width: 576px) {
+    .fondo {
+        height: 300px; 
+    }
+}
+
+.icono{
+    height: 55px;
+    
+}
+
+
+.container_eslogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.eslogan{
+    font-size: 10px;
+}
+
+.destacados{
+    justify-content: center;
+    display: flex;
+    color: black;
+    padding: 40px;
+}
+
+.foto_1{
+    width: 325px;
+    height: 325px;
+    position: relative;
+}
+
+.titulo_1{
+    font-size: large;
+}
+
+.foto_2{
+    width: 325px;
+    height: 325px;
+    position: relative;
+}
+
+.titulo_2{
+    font-size: large;
+}
+
+.foto_3{
+    width: 325px;
+    height: 325px;
+    position: relative;
+}
+
+.titulo_3{
+    font-size: large;
+}
+
+.descripcion{
+    justify-content: center;
+    display: flex;
+    color: black;
+    padding: 40px;
+}
+
+.informacion{
+    justify-content: center;
+    display: flex;
+    color: black;
+    padding: 40px;
+}
+
+.catalogo{
+    justify-content: center;
+    display: flex;
+    color: black;
+    padding: 40px;
+}
+
+.cubiertos{
+    height: 290px;
+}
+
+.platos{
+    height: 290px;
+}
+
+.genero{
+    height: 290px;
+}
+
+.basura{
+    height: 290px;
+}
+
+.esponja{
+    height: 290px;
+}
+
+.titulos{
+    font-size: 35px;
+}
+
+.row{
+    padding-bottom: 30px;
+}
+
+
+

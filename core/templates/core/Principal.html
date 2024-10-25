@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block main %}
+<div class="fondo">
+    <div class="container_eslogan" style="display: flex;justify-content: center;align-items: center;height: 70vh;">
+        <h2 style="color: black; font-size: 30px;">Productos ecológicos para un futuro sostenible</h2>
+    </div>
+    
+</div>   
+
+<div>
+    <h1 class="destacados" style="justify-content: center;display: flex; color: black; padding: 40px;">
+    Productos Destacados
+    </h1>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-4">               
+            <div class="card">
+                <img src="{% static 'core/css/cubiertos_biodegadables.jpg' %}" class="cubiertos" alt="cubiertos" style="height: 290px;">
+                <div class="card-body">
+                    <h1 class="titulos" style="font-size: 35px;">Servicios biodegradables</h1>
+                    <a href="{% url 'Catalogo' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+            </div>               
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-4">
+            <div class="card">
+                <img src="{% static 'core/css/bolsa_biodegradable.webp' %}" class="basura" alt="basura" style="height: 290px">
+                <div class="card-body">
+                    <h1 class="titulos" style="font-size: 35px;">Bolsas de basura biodegradables</h1>
+                    <a href="{% url 'Catalogo' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+            </div>
+        </div>            
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-4">
+            <div class="card">
+                <img src="{% static 'core/css/bolsa_ecologica.webp' %}" class="genero" alt="genero" style="height: 290px;">
+                <div class="card-body">
+                    <h1 class="titulos" style="font-size: 35px;">Bolsas de genero biodegradables </h1>
+                    <a href="{% url 'Catalogo' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+
+<div>
+    <h1 class="descripcion" style="justify-content: center;display: flex;color: black;padding: 40px;">
+        Acerca de nosotros
+    </h1>
+    <p class="informacion" style="justify-content: center;display: flex;color: black;padding: 40px;">
+        En Tienda Verde, somos una pequeña empresa local comprometida con el cuidado del medio ambiente. Nos dedicamos a la venta de productos ecológicos y sostenibles, ofreciendo alternativas responsables que ayudan a reducir el impacto ambiental. <br>
+        Creemos firmemente en la importancia del reciclaje y promovemos prácticas responsables entre nuestros clientes para fomentar un estilo de vida más consciente y respetuoso con el planeta. A través de nuestros productos y servicios, buscamos contribuir al bienestar de la naturaleza y de nuestra comunidad.
+    </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+{% endblock %}
+

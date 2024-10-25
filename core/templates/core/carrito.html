@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block main %}
+<body>
+    <h1>Carrito de Compras</h1>
+
+    <div class="cart-details">
+        <div class="cart-product">
+            <div class="info-cart-product">
+                <span class="cantidad-producto-carrito">1</span>
+                <p class="titulo-producto-carrito">Producto 1</p>
+                <span class="precio-producto-carrito">$80</span>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Total a Pagar:</h3>
+            <span class="total-pagar">$80</span>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+{% endblock %}

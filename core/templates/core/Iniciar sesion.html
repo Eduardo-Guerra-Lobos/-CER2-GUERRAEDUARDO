@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+{% block main %}
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <h4>
+    Bienvenido de vuelta {{ user.username | upper }}
+  </h4>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+{% endblock %}
