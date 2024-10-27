@@ -18,6 +18,8 @@ const ValorTotal = document.querySelector('.total-pagar');
 
 const CantidadProductos = document.querySelector('#contador-productos');
 
+/*==================================================================*/ 
+
 ListaProductos.addEventListener('click', e => {
     if(e.target.classList.contains('btn-add-cart')){
         const Producto = e.target.parentElement;
@@ -47,6 +49,8 @@ ListaProductos.addEventListener('click', e => {
     }
 });
 
+/*==================================================================*/ 
+
 FilaProducto.addEventListener('click', (e) => {
     if(e.target.classList.contains('icon-close')){
         const Producto = e.target.parentElement;
@@ -59,6 +63,8 @@ FilaProducto.addEventListener('click', (e) => {
         showHTML();
     }
 });
+
+/*==================================================================*/ 
 
 const showHTML = () => {
     FilaProducto.innerHTML = '';
@@ -83,18 +89,19 @@ const showHTML = () => {
 
         FilaProducto.append(containerProduct);
 
-        Total += Producto.quantity * parseFloat(Producto.price.slice(1)); // Calcular el total como un número
+        Total += Producto.quantity * parseFloat(Producto.price.slice(1)); 
         TotalProductos += Producto.quantity;
     });
 
-    ValorTotal.innerText = `$${Total}`; // Mostrar el total formateado
+    ValorTotal.innerText = `$${Total}`; 
     CantidadProductos.innerText = TotalProductos;
 
-    // Actualizar el valor del input oculto con el total
-    document.querySelector('#total-input').value = Total; // Guardar el total como un int en el input
+    document.querySelector('#total-input').value = Total; 
 };
+
+/*==================================================================*/ 
 
 document.querySelector('#realizar-pedido').addEventListener('click', () => {
     const MontoPagar = document.querySelector('.total-pagar').textContent.trim();
-    document.querySelector('#pedido-form').submit(); // Solo se envía el formulario
+    document.querySelector('#pedido-form').submit(); 
 });
