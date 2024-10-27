@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout, login
 from django.contrib.auth import authenticate
-from .forms import CustomUserCreationForm
+from .forms import RegistroUserCreationForm
 from django.contrib.auth.models import Group
 from .models import GestorPedidos
 from .models import Producto
@@ -35,11 +35,11 @@ def Formulario(request):
 
 def Registrarse(request):
     data = {
-        'form': CustomUserCreationForm()      
+        'form': RegistroUserCreationForm()      
     }   
 
     if request.method == 'POST':
-            Formulario = CustomUserCreationForm(data=request.POST)
+            Formulario = RegistroUserCreationForm(data=request.POST)
             if Formulario.is_valid():
                 user = Formulario.save()
 
